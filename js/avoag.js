@@ -79,10 +79,13 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
-$("#xmas2").delay( 2000 ).fadeOut( 1000 );
-$("#xmas1").delay( 5000 ).fadeOut( 500 );
+//$("#xmas2").delay( 2000 ).fadeOut( 1000 );
+//$("#xmas1").delay( 5000 ).fadeOut( 500 );
 
-
+$('#xmas2').on("click","img", function (e) {
+    e.preventDefault();
+    $("#xmas2").fadeOut( 1000 );
+});
 
 });
 
